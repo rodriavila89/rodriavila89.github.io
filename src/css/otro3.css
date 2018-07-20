@@ -1,0 +1,1717 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500);
+html,
+body {
+    background: none repeat scroll 0 0 #ffffff;
+    height: 100%;
+}
+
+#wrap {
+    height: auto !important;
+    margin: 0 auto -60px;
+    min-height: 100%;
+    padding: 0 0 60px;
+}
+
+footer {
+    background-color: #F5F5F5;
+}
+
+#wrap>.container {
+    padding: 60px 15px 0;
+}
+
+.container .credit {
+    margin: 10px 0;
+}
+
+footer>.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-hora {
+    width: 100% !important;
+}
+
+.row-hora span {
+    background: #f5ede7;
+    height: 32px;
+    line-height: 32px;
+    color: #53534f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#america .row-indice {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#america .row-indice div.nom,
+#america .row-indice div.por,
+#america .row-indice div.num {
+    padding-top: 8px;
+}
+
+#america .row-indice span {
+    font-size: 11px;
+}
+
+#monedas .row-indice {
+    height: 29px;
+    border-bottom: solid 1px #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    line-height: 29px;
+    padding: 0 5px;
+}
+
+#monedas .row-indice div.nom,
+#monedas .row-indice div.por,
+#monedas .row-indice div.num {
+    padding-top: 8px;
+}
+
+#monedas .row-indice span {
+    font-size: 11px;
+}
+
+#monedas .row-indice div.nom {
+    width: 105px !important;
+    overflow: hidden;
+}
+
+.bs-section .table>thead>tr>th,
+.bs-section .table>tbody>tr>th,
+.bs-section .table>tfoot>tr>th,
+.bs-section .table>thead>tr>td,
+.bs-section .table>tbody>tr>td,
+.bs-section .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+#divAcciones td {
+    height: 39px;
+    line-height: 37px;
+}
+
+#contenedor {
+    width: 100% !important;
+}
+
+#contDest {
+    width: 100% !important;
+}
+
+#contDest .destacado {
+    width: 100% !important;
+}
+
+.row-indice {
+    height: 29px;
+    border-bottom: solid 1px #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    line-height: 29px;
+    padding: 0 5px;
+}
+
+#contBody {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FCFAF9;
+    border-bottom: 1px solid #E7DACE;
+    border-image: none;
+    /**border-left: 1px solid #E7DACE;
+	border-right: 1px solid #E7DACE;
+	border-top: medium none !important;**/
+    height: auto;
+    padding-left: 25px !important;
+    padding-right: 10px !important;
+    width: 955px;
+}
+
+#contBody .cont-nota .navnotas {
+    border-bottom: 1px solid #A7A6A5;
+    font-family: 'droid_r';
+    font-size: 13px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+#contBody .cont-nota .navnotas a {
+    color: #3A3A3A;
+    float: left;
+    line-height: 35px;
+}
+
+#contBody .cont-nota .navnotas a.sig-r {
+    float: right;
+}
+
+#contBody h1 {
+    font-size: 19px;
+    margin: 5px 0 10px;
+}
+
+#contBody .cont-nota h1 {
+    font-size: 19px;
+    margin: 0;
+    font-weight: normal;
+    padding: 15px 25px;
+    background: #dfdcd7;
+    color: #231f1e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-menu {
+    height: 43px;
+    margin: 9px 0 !important;
+    padding: 10px 0;
+    display: block
+}
+
+.main-menu-nav {
+    font-family: 'Ubuntu', sans-serif;
+    background: #366a75;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #366a75), color-stop(100%, #284e56));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #366a75 0%, #284e56 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#366a75', endColorstr='#284e56', GradientType=0);
+    /* IE6-9 */
+    height: 60px
+}
+
+.main-menu .name {
+    border-color: #E7E7E7;
+    border-radius: 4px;
+    color: #777777;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: -3px;
+    min-height: 50px;
+    padding-right: 47px;
+    padding-top: 2px;
+    position: relative;
+}
+
+.main-menu ul {}
+
+.main-menu li {
+    float: left;
+    border-right: 1px #366a75 solid;
+    border-left: 1px #284e56 solid;
+}
+
+.main-menu li:first-child {
+    border-left: none;
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/mercados.png") 5px 0px no-repeat;
+}
+
+.main-menu li:last-child {
+    border-right: none;
+}
+
+.main-menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    height: 43px;
+    line-height: 43px;
+    width: 120px;
+    text-align: center
+}
+
+.main-menu li:first-child a {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 60px
+}
+
+.main-menu li a:hover,
+.main-menu li.active a {
+    background: #1f3d43;
+    text-decoration: none !important;
+    color: #FFF
+}
+
+.main-menu .active a {
+    color: #fcfaf9
+}
+
+.main-menu #nav-home a {
+    font-family: 'Droid_b', Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.main-menu #nav-home.active a {
+    color: #FFF;
+    background: none;
+}
+
+.head-seccion {
+    background: none repeat scroll 0 0 #3A3A3A;
+    color: #FCFAF9;
+    font-family: 'droid_b';
+    font-size: 21px;
+    margin-left: 0;
+    margin-right: 7px;
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+.volanta {
+    color: #366A75;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.volanta a {
+    color: #366A75;
+}
+
+.datenota {
+    color: #6B6B66;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.nav-volanta {
+    color: #366A75;
+    display: inline;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    width: 170px;
+}
+
+.nav-volanta a {
+    color: #366A75;
+    float: none !important;
+}
+
+table {
+    width: 100%;
+}
+
+.tablaInterna {
+    background-color: #E0DCD3 !important;
+}
+
+.dolar {
+    cursor: pointer;
+}
+
+.dolar .tablaInterna {
+    box-shadow: 0 5px 5px #FFFFFF, 0 9px 0 #FFFFFF, 0 9px 10px rgba(0, 0, 0, 0), 0 2px 9px rgba(0, 0, 0, 0.2) inset, 0 -2px 9px rgba(0, 0, 0, 0.2) inset;
+}
+
+.dolar .tablaInterna:hover {
+    box-shadow: 0 5px 5px #FFFFFF, 0 9px 0 #FFFFFF, 0 9px 10px rgba(0, 0, 0, 0), 0 2px 15px rgba(255, 255, 255, 0.4) inset, 0 -2px 9px rgba(0, 0, 0, 0.2) inset;
+    color: #6F6C6C !important;
+}
+
+.dolar .tablaInterna:active {
+    box-shadow: 0 5px 5px #FFFFFF, 0 9px 0 #FFFFFF, 0 9px 10px rgba(0, 0, 0, 0), 0 2px 15px rgba(255, 255, 255, 0.4) inset, 0 -2px 9px rgba(0, 0, 0, 0.2) inset;
+    color: #6F6C6C !important;
+    top: 7px;
+}
+
+.dolar .tablaInternaSeleccionada {
+    background-color: #B3B0A8 !important;
+    box-shadow: 0 2px 0 #FFFFFF;
+    color: #6F6C6C !important;
+}
+
+.dolar .tablaInternaSeleccionada .compraVentaTable {
+    color: #000000;
+}
+
+.tablaInterna a {
+    color: #FFFFFF !important;
+}
+
+.tablaInterna .titleTabla {
+    background: #3e4241;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e4241), color-stop(100%, #343633));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #3e4241 0%, #343633 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3e4241', endColorstr='#343633', GradientType=0);
+    /* IE6-9 */
+    line-height: 38px;
+}
+
+.tablaChica .tablaInterna .titleTabla {
+    background: #dfdcd7;
+    line-height: 3;
+}
+
+.tablaInterna .titleTabla td {
+    text-indent: 5px
+}
+
+.tablaInterna .titleTabla a {
+    color: #FFFFFF;
+    vertical-align: middle;
+}
+
+.tablaInterna .titleTabla span {
+    color: #FFFFFF;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.tablaChica .tablaInterna .titleTabla span {
+    color: #000;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font17 {
+    font-size: 17px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font11 {
+    font-size: 11px;
+}
+
+.font10 {
+    font-size: 10px;
+}
+
+.font9 {
+    font-size: 9px;
+}
+
+.tablaInterna .titleTabla img {
+    height: 24px;
+    float: left;
+    width: 24px;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.compraVentaTable {
+    text-align: center;
+    background: #2c2c2c;
+    vertical-align: middle;
+    color: #c3c3c3;
+    font-size: 10px;
+    height: 40px
+}
+
+.compraVentaTable:first-child {
+    background: #212121;
+}
+
+.tablaChica .compraVentaTable {
+    background: #eeeae7;
+    color: #2c2c2c;
+}
+
+.tablaChica .compraVentaTable:first-child {
+    background: #f5f1ee;
+}
+
+.compraVentaTable span {
+    font-size: 13px;
+    color: #FFF;
+    margin-left: 2px
+}
+
+.tablaChica .compraVentaTable span {
+    font-size: 13px;
+    color: #2c2c2c;
+    margin-left: 2px
+}
+
+.variacionTable {
+    background: #1c1c1c;
+    vertical-align: middle;
+    height: 65px;
+    text-align: center;
+    padding: 0 15px
+}
+
+.tablaChica .variacionTable {
+    background: #fbf9fa;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fbf9fa 0%, #e5e1e0 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbf9fa), color-stop(100%, #e5e1e0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fbf9fa 0%, #e5e1e0 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fbf9fa 0%, #e5e1e0 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fbf9fa 0%, #e5e1e0 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #fbf9fa 0%, #e5e1e0 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fbf9fa', endColorstr='#e5e1e0', GradientType=0);
+    /* IE6-9 */
+    height: 50px
+}
+
+.variacionTable .textVar {
+    color: #c3c3c3;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.variacionTable .numVar {
+    font-size: 25px
+}
+
+.tablaChica .variacionTable .textVar {
+    color: #a3a2a0;
+    display: block;
+}
+
+.tablaChica .variacionTable .numVar {
+    font-size: 16px
+}
+
+.monedas .destacadosMargenes:nth-child(1) .numVar,
+.monedas .destacadosMargenes:nth-child(2) .numVar,
+.monedas .destacadosMargenes:nth-child(3) .numVar {
+    font-size: 35px
+}
+
+.monedas .destacadosMargenes:nth-child(1) .variacionTable,
+.monedas .destacadosMargenes:nth-child(2) .variacionTable,
+.monedas .destacadosMargenes:nth-child(3) .variacionTable {
+    height: 100px
+}
+
+.paisTable {
+    text-align: right;
+}
+
+.mas {
+    color: #38a747;
+}
+
+.menos {
+    color: #d50000;
+}
+
+.igual {
+    color: #FFF;
+}
+
+.tablaChica .igual,
+.rayado .igual {
+    color: #2c2c2c;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.ko-grid {
+    background-color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.ko-grid th {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.ko-grid td,
+th {
+    padding: 0.4em;
+}
+
+.ko-grid tr:nth-child(2n+1) {
+    background-color: #E0DCD3;
+}
+
+.ko-grid-pageLinks {
+    margin-bottom: 1em;
+}
+
+.ko-grid-pageLinks a {
+    padding: 0.5em;
+}
+
+.ko-grid-pageLinks a.selected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.grillaColumnas td {
+    padding: 2px;
+}
+
+.cont-notaInfo {
+    color: #52504F;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.infoDetallada {
+    color: #3A3A3A;
+    font-size: 18px;
+}
+
+.infoDetallada hr {
+    background-color: #E0DCD3;
+    height: 1px !important;
+}
+
+.fondoOscuro {
+    background: none repeat scroll 0 0 #E0DCD3;
+}
+
+#resultsChart {
+    height: 220px;
+    width: 300px;
+    color: #c9c9c9;
+}
+
+.botonesGrafico {
+    width: 578px;
+}
+
+.tituloHistorico {
+    font-family: lucida grande, tahoma, verdana, arial, sans-serif;
+}
+
+.cuadroInfoDetallada {
+    background: none repeat scroll 0 0 #F5F0EB;
+    margin-left: 0;
+    margin-right: 7px;
+    overflow: auto;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+    width: 65% !important;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+    width: 35% !important;
+}
+
+.invisible {
+    display: none;
+}
+
+.span5 {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+    width: 470px;
+}
+
+.span6 {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+    overflow: hidden;
+    width: 618px;
+}
+
+.span3 {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+    width: 270px;
+}
+
+.span4 {
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+    min-height: 1px;
+    width: 620px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.span11 {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+    width: 955px;
+}
+
+.span1 {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+    width: 70px;
+}
+
+.span7 {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+    width: 670px;
+}
+
+.campoFecha {
+    height: 30px;
+    text-align: center;
+    width: 100px;
+}
+
+.destacadosFondoNegro {
+    overflow: auto;
+}
+
+.destacadosMargenes {
+    width: 220px;
+    float: left;
+    margin: 10px;
+}
+
+.bonos .destacadosMargenes,
+.tasas .destacadosMargenes {
+    width: 300px;
+}
+
+.monedas .destacadosMargenes:nth-child(1),
+.monedas .destacadosMargenes:nth-child(2),
+.monedas .destacadosMargenes:nth-child(3) {
+    width: 300px;
+}
+
+.tablaGrande {
+    width: 100%;
+}
+
+.tablaMediana {
+    border: 3px solid #FCFAF9;
+    float: left;
+    width: 233px;
+}
+
+.wpTabChica {
+    padding: 10px;
+}
+
+.tablaChica {
+    float: left;
+    width: 170px;
+    margin: 12px
+}
+
+.bs-section {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.marquee,
+.marquee-with-options,
+.marquee-vert-before,
+.marquee-vert {
+    overflow: hidden;
+}
+
+.cont-nota-home,
+.destacadosFondoNegro {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    padding: 15px;
+    background: #232323;
+    overflow: auto;
+}
+
+.cont-nota-home {
+    padding: 25px;
+}
+
+.box {
+    width: 300px;
+    float: left;
+    margin-bottom: 20px
+}
+
+.box.md {
+    margin: 0 20px
+}
+
+.box thead {
+    height: 50px;
+    background: #366a75;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #366a75), color-stop(100%, #284e56));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #366a75 0%, #284e56 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#366a75', endColorstr='#284e56', GradientType=0);
+    /* IE6-9 */
+}
+
+.tablaHomeCompraVenta {
+    text-align: center;
+    width: 15%;
+}
+
+.tablaHomeEncabezados th {
+    padding: 0 5px;
+    color: #FFF;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px
+}
+
+.tablaHomeEncabezados th a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.tablaHomeEncabezados th a:hover {
+    color: #000;
+    text-decoration: none
+}
+
+.tablaHomeEncabezados tbody,
+.tablaHomeEncabezados tbody a {
+    color: #FFF
+}
+
+.tablaHomeEncabezados tbody tr:hover {
+    background-color: #D3D3D3;
+    cursor: pointer;
+}
+
+.tablaHomeEncabezados tbody tr {
+    height: 30px;
+    background: #2e3030;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #2e3030 0%, #262928 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e3030), color-stop(100%, #262928));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2e3030 0%, #262928 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2e3030 0%, #262928 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2e3030 0%, #262928 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #2e3030 0%, #262928 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2e3030', endColorstr='#262928', GradientType=0);
+    /* IE6-9 */
+}
+
+.tablaHomeEncabezados tbody tr td {
+    vertical-align: middle
+}
+
+.alineadoIzquierdo {
+    text-align: left !important;
+}
+
+.graficoHome {
+    height: 200px !important;
+    width: 320px !important;
+}
+
+.accionesHome {
+    background: #181818;
+    clear: both;
+    line-height: 3;
+    color: #FFF
+}
+
+.accionesHome-titulo {
+    background: #366a75;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #366a75), color-stop(100%, #284e56));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #366a75 0%, #284e56 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#366a75', endColorstr='#284e56', GradientType=0);
+    /* IE6-9 */
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 38px
+}
+
+.accionesHome-titulo strong {
+    font-weight: normal;
+    line-height: 39px;
+}
+
+.bolsaArg .cuadroInfoDetallada hr {
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.commodities .cuadroInfoDetallada hr {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+.bolsaArg .cuadroInfoDetallada .accionesDestacadas hr {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+
+.wpListaBonos {
+    padding: 0 22px;
+    font-size: 13px
+}
+
+.rayado th {
+    background-color: #edeae7;
+    color: #366a75;
+    font-weight: 200;
+    text-align: left;
+}
+
+.bolsaArg a {
+    color: #3A3A3A !important;
+}
+
+.head-tabla-bonos {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.head-tabla-bonos .idTabs li {
+    display: block;
+    float: left;
+    width: 300px;
+    margin: 11px;
+}
+
+.head-tabla-bonos .idTabs li a {
+    background: #356770;
+    color: #FFF;
+    display: block;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.head-tabla-bonos .idTabs li a:hover {
+    background: #1F3D43;
+    text-decoration: none
+}
+
+.head-tabla-bonos li.stick>a {
+    background: #1F3D43;
+    text-decoration: none
+}
+
+.head-tabla-bonos ul,
+.head-tabla-tasas ul {
+    padding: 0;
+}
+
+.head-tabla-tasas {
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.head-tabla-tasas li {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 50%;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.head-tabla-tasas li a {
+    color: #212121;
+    background: #d5d1cd;
+    display: block;
+    line-height: 60px;
+    text-decoration: none !important
+}
+
+.head-tabla-tasas li a:hover {
+    color: #262626;
+}
+
+.head-tabla-tasas li.stick a {
+    background: none;
+}
+
+.head-tabla-tasas li.stick a:link {
+    color: inherit
+}
+
+.tasas .compraVentaTable {
+    background: #1b1b1b;
+    padding: 5px 10px;
+    height: 50px;
+    text-align: left;
+    font-size: 17px
+}
+
+.tasas .compraVentaTable span {
+    color: #FFF;
+    font-size: 17px;
+    float: right
+}
+
+#selectable .ui-selecting .tablaInterna {
+    background: none repeat scroll 0 0 #C9C6BD !important;
+}
+
+#selectable .ui-selected .tablaInterna {
+    background: none repeat scroll 0 0 #B3B0A8 !important;
+}
+
+#selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 955px;
+}
+
+#selectable li {
+    float: left;
+    padding: 1px;
+    text-align: center;
+}
+
+.destacadosComodities {
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+.tituloCommodity {
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 200;
+    height: 40px;
+    text-indent: 5px;
+    text-transform: uppercase;
+    background: #3e4241;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e4241), color-stop(100%, #343633));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3e4241 0%, #343633 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #3e4241 0%, #343633 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3e4241', endColorstr='#343633', GradientType=0);
+    /* IE6-9 */
+    line-height: 40px;
+}
+
+.contenidoCommodity {
+    overflow: hidden;
+}
+
+.contenidoCommodity .titMercadoCom {
+    background: #366a75;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #366a75), color-stop(100%, #284e56));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #366a75 0%, #284e56 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#366a75', endColorstr='#284e56', GradientType=0);
+    /* IE6-9 */
+    line-height: 40px;
+    text-align: left;
+    text-indent: 10px;
+    padding: 10px 0;
+}
+
+.contenidoCommodity .titMercadoCom a {
+    color: #FFF;
+    font-size: 15px;
+    padding: 30px;
+}
+
+.contenidoCommodity .varComm {
+    background: #151515;
+    height: 60px;
+    padding: 0 10px;
+    color: #a8a8a8;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.contenidoCommodity .varComm strong {
+    font-weight: 400;
+    display: inline-block;
+    float: none
+}
+
+.contenidoCommodity .varComm span {
+    display: block;
+    width: 140px;
+    float: left;
+    line-height: 60px
+}
+
+.contenidoCommodity .varComm span.numvar {
+    font-size: 25px;
+    text-align: right
+}
+
+.contenidoCommodity .varComm span.txtvar {
+    text-align: left;
+}
+
+.contenidoCommodity .compra,
+.contenidoCommodity .venta {
+    width: 50%;
+    float: left;
+    background: #212121;
+    color: #C3C3C3;
+    font-size: 10px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.contenidoCommodity .venta {
+    background: #2C2C2C
+}
+
+.contenidoCommodity .compra span,
+.contenidoCommodity .venta span {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+.otrosCommodities {
+    overflow: auto;
+    padding: 15px;
+}
+
+.boxCommodities {
+    float: left;
+    margin: 10px;
+    width: 300px;
+}
+
+.boxCommoditiesSmall {
+    float: left;
+    margin: 10px;
+    width: 220px;
+}
+
+.boxCommoditiesSmall .compra,
+.boxCommoditiesSmall .venta {
+    line-height: 13px;
+    padding-top: 5px;
+    height: 40px
+}
+
+.boxCommoditiesSmall .compra span,
+.boxCommoditiesSmall .venta span {
+    display: block;
+}
+
+.boxCommoditiesSmall .varComm span {
+    width: auto;
+}
+
+.boxCommoditiesSmall .varComm span.numvar {
+    font-size: 15px;
+    float: right
+}
+
+.boxCommoditiesSmall .elemento {
+    margin: 20px 0
+}
+
+.boxCommoditiesSmall h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px
+}
+
+.tituloCommodity a {
+    margin-left: 5px;
+    color: #20201e;
+    text-transform: none
+}
+
+.tituloCommodity a:hover {
+    color: #20201e
+}
+
+.otrosCommodities .tituloCommodity,
+.otrosCommodities .contenidoCommodity .varComm {
+    background: #f6f2ef;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f6f2ef 0%, #cfceca 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f2ef), color-stop(100%, #cfceca));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f6f2ef 0%, #cfceca 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f6f2ef 0%, #cfceca 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f6f2ef 0%, #cfceca 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f6f2ef 0%, #cfceca 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f6f2ef', endColorstr='#cfceca', GradientType=0);
+    /* IE6-9 */
+}
+
+.otrosCommodities .compra {
+    background: #F5F1EE;
+    color: #20201e
+}
+
+.otrosCommodities .venta {
+    background: #EEEAE7;
+    color: #20201e
+}
+
+.otrosCommodities .venta span,
+.otrosCommodities .compra span {
+    color: #212121
+}
+
+.variacionTable .equal {
+    background-size: 100% 100%;
+    display: inline-block;
+    float: none;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 16px;
+}
+
+.equal {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/equal16x16.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
+
+.igual .equal,
+.mas .up,
+.menos .down {
+    height: 11px;
+    margin-right: 5px;
+    width: 12px;
+}
+
+.variacionTable .down {
+    display: inline-block;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 16px;
+    float: none;
+}
+
+.down {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/down16x16.png");
+    height: 9px !important;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
+
+.variacionTable.font12 .down,
+.variacionTable.font12 .up,
+.variacionTable.font12 .equal {
+    height: 11px;
+    margin-right: 5px;
+    margin-top: 0;
+    width: 12px;
+}
+
+#divAcciones .menos .down,
+#divAcciones .mas .up,
+#divAcciones .igual .equal {
+    float: left;
+    margin-right: 5px;
+    margin-top: 13px;
+}
+
+.commoditiesInternational {
+    background-color: #2c2f2e;
+    border-style: none;
+    font-size: 11px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #FFF
+}
+
+.commoditiesInternational th {
+    background-color: #181818;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #dfdfdf;
+    line-height: 30px
+}
+
+.commoditiesInternational td {
+    border-bottom: 1px solid #868887;
+    padding: 3px 0
+}
+
+.accionesHome #divAcciones {
+    display: block;
+}
+
+.tablaHomeEncabezados .menos .down,
+.tablaHomeEncabezados .mas .up,
+.tablaHomeEncabezados .igual .equal {
+    float: left;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.variacionTable .up {
+    float: none;
+    display: inline-block;
+    background-size: 100% 100%;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 16px;
+}
+
+.infoDetallada .up,
+.infoDetallada .down,
+.infoDetallada .equal {
+    margin-right: 100px;
+    margin-top: 5px;
+}
+
+.up {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/up16x16.png");
+    height: 9px !important;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
+
+.up.white {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/up16x16.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
+
+
+/*SECCIONES*/
+
+.graficoSec #resultsChart {
+    height: 260px;
+    width: auto !important;
+}
+
+.graficoSec {
+    margin: 10px;
+    position: relative
+}
+
+.graficoSec .head-seccion {
+    margin: 0;
+    height: 50px;
+    background: #366a75;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #366a75), color-stop(100%, #284e56));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #366a75 0%, #284e56 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #366a75 0%, #284e56 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#366a75', endColorstr='#284e56', GradientType=0);
+    /* IE6-9 */
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 50px;
+}
+
+.graficoSec .head-seccion span {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 19px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.graficoSec .head-seccion img {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.graficoSec .cuadroInfoDetallada {
+    margin: 0;
+    background: #122428;
+}
+
+.graficoSec .span3 {
+    width: 280px;
+    padding: 20px;
+    float: left;
+    margin: 0;
+    background: #1e1e1e;
+    min-height: 365px
+}
+
+.graficoSec .span6 {
+    width: auto;
+    overflow: hidden;
+    float: none;
+    margin: 0;
+    padding: 20px
+}
+
+.graficoSec .span6 .span5 {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+
+.graficoSec .botonesGrafico {
+    text-align: center;
+    margin-top: 20px
+}
+
+.graficoSec .botonesGrafico button {
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
+    margin: 3px;
+    display: inline-block;
+    height: 35px;
+    width: 85px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #172f35;
+    box-shadow: none;
+    text-shadow: none;
+    line-height: 15px;
+}
+
+.graficoSec .botonesGrafico button.btn,
+.graficoSec .botonesGrafico button:hover {
+    background: #0c1d21;
+    color: #fff
+}
+
+.graficoSec .botonesGrafico button.btn-default {
+    background: #172f35;
+}
+
+.graficoSec .infoDetallada {
+    padding: 15px;
+    margin-top: 5px;
+    background: #1d3f46;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #2cbbd8
+}
+
+.graficoSec .infoDetallada.dest {
+    margin-top: 0;
+    color: #FFF;
+    text-align: center
+}
+
+.graficoSec .infoDetallada .infodest {
+    display: block;
+    color: #FFF;
+    text-indent: -12px;
+    font-size: 36px;
+    margin-top: 20px
+}
+
+.graficoSec .infoDetallada .num {
+    float: right;
+    color: #FFF
+}
+
+.graficoSec .igual .equal,
+.graficoSec .mas .up,
+.graficoSec .menos .down {
+    height: 16px;
+    margin-right: 5px;
+    width: 24px;
+    float: left
+}
+
+.graficoSec .infoDetallada.mas {
+    background: #1f8842
+}
+
+.graficoSec .infoDetallada.igual {
+    background: #292929
+}
+
+.graficoSec .infoDetallada.menos {
+    background: #af2e24;
+}
+
+.span4 h4 {
+    font-family: 'droid_r' !important;
+    font-size: 15px !important;
+    color: #FFF !important;
+    margin: 0 !important;
+    background: #3a3a3a !important;
+    padding: 10px !important
+}
+
+.span4 .search {
+    margin: 1px 0;
+    background: #f4f3f2;
+    text-transform: uppercase;
+    height: 40px;
+    color: #7e8883;
+    font-size: 13px;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.span4 .search input,
+.span4 .search button {
+    float: right;
+    height: 40px;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-left: 5px
+}
+
+.span4 .search input {
+    background: #edeae7
+}
+
+.span4 .search button {
+    width: 95px;
+    color: #3a3a3a;
+    background: #bfbbb7;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.span4 table {
+    border: none !important;
+    margin: 0
+}
+
+.span4 table thead th {
+    height: 40px;
+    background: #edeae7;
+    text-transform: uppercase;
+    color: #366a75;
+    padding: 0 15px;
+    font-weight: 400;
+    vertical-align: middle;
+    border-bottom: 1px solid #FFF;
+}
+
+.span4 table tbody td {
+    height: 33px;
+    background: #f5f0eb;
+    vertical-align: middle;
+    padding: 0 15px;
+    border-bottom: 1px solid #dfdcda
+}
+
+.span4 .ko-grid-pageLinks {
+    line-height: 40px;
+    padding: 0 15px;
+    color: #4a524e;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #edeae7
+}
+
+.span4 .ko-grid-pageLinks a.selected {
+    background: none;
+    color: #366a75;
+    text-decoration: underline
+}
+
+.span4 .ko-grid-pageLinks a {
+    color: inherit
+}
+
+
+/**/
+
+.jqplot-yaxis {
+    margin-right: 10px;
+}
+
+.jqplot-axis {
+    font-size: 0.75em;
+}
+
+
+/**/
+
+.box-acciones-destacadas {
+    margin-left: 10px: display: inline;
+}
+
+.box-acciones-destacadas .mas .up {
+    float: none;
+}
+
+.mercados-mobile {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 fcfaf9;
+    border-bottom: 1px solid #e7dace;
+    border-image: none;
+    border-left: 1px solid #e7dace;
+    border-top: medium none !important;
+    border-right: 1px solid #e7dace;
+    height: auto;
+}
+
+#mercados-iframe {
+    zoom: 0.71;
+    06. -moz-transform: scale(0.71);
+    07. -moz-transform-origin: 0 0;
+    08. -o-transform: scale(0.71);
+    09. -o-transform-origin: 0 0;
+    10. -webkit-transform: scale(0.71);
+    11. -webkit-transform-origin: 0 0;
+}
+
+.entry-box.entry-box-iframe #Mercados .head {
+    text-align: left !important;
+}
+
+.icon.up {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/up16x16.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
+
+.icon.up.white {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/up16x16.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
+
+.icon.down {
+    background: url("http://mercado.cronista.com:8080/MercadosWeb/Imagenes/down16x16.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+}
