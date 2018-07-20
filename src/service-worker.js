@@ -37,6 +37,7 @@ self.addEventListener('activate', function(e) {
         // Get all the cache keys (cacheName)
         caches.keys().then(function(cacheNames) {
             return Promise.all(cacheNames.map(function(thisCacheName) {
+                console.log('CACHE ACTUAL: ', thisCacheName);
 
                 // If a cached item is saved under a previous cacheName
                 if (thisCacheName !== cacheName) {
