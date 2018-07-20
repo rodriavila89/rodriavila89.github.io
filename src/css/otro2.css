@@ -1,0 +1,48 @@
+<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>@charset "utf-8";
+@import "http://fonts.googleapis.com/css?family=Ubuntu:400,500";
+#stickyMercados .mas {
+    color: #38a747
+}
+
+#stickyMercados .menos {
+    color: #d50000
+}
+
+#stickyMercados .igual {
+    color: #FFF
+}
+
+#stickyMercados .up {
+    background: url(<cms:link>/arte/btn_up16x16.png</cms:link>) no-repeat;
+    float: right
+}
+
+#stickyMercados .down {
+    background: url(<cms:link>/arte/btn_down16x16.png</cms:link>) no-repeat;
+    float: right
+}
+
+#stickyMercados .equal {
+    background: url(<cms:link>/arte/btn_equal_2_16x16.png</cms:link>) no-repeat;
+    float: right
+}
+
+#stickyMercados .igual .equal,
+#stickyMercados .mas .up,
+#stickyMercados .menos .down {
+    height: 11px;
+    margin-right: 5px;
+    width: 12px
+}
+
+#stickyMercados .menos .down,
+#stickyMercados .mas .up,
+#stickyMercados .igual .equal {
+    float: left;
+    margin-left: 5px;
+    margin-top: 6px
+}
+
+.entry-box.entry-box-iframe #stickyMercados .head {
+    text-align: left !important;
+}
