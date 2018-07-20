@@ -1,5 +1,5 @@
 // Set a name for the current cache
-var cacheName = 'v7';
+var cacheName = 'v8';
 
 // Default files to always cache
 var cacheFiles = [
@@ -50,11 +50,13 @@ self.addEventListener('activate', function(e) {
 
 
 self.addEventListener('fetch', function(e) {
-    console.log('[ServiceWorker] Fetch', e.request.url);
+    //console.log('[ServiceWorker] Fetch', e.request.url);
 
     const myUrl = e.request.url;
 
-    if (myUrl.match(/(?:(?:https?):\/\/|www\.)(rodriavila89.github.io)(.*)\.css|(.*)\.js)/)) {
+    console.log('mi request: ', myUrl);
+
+    if (myUrl.match(/(?:(?:https?):\/\/|www\.)(rodriavila89.github.io)(.*)\.css|(.*)\.js/)) {
         // e.respondWidth Responds to the fetch event
         e.respondWith(
 
