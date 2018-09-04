@@ -54,7 +54,7 @@ self.addEventListener('fetch', e => {
   const myUrl = e.request.url;
   console.log('Service Worker: Fetching - ', myUrl);
 
-  if (myUrl.match(/(?:(?:https?):\/\/|www\.)(rodriavila89.github.io)(.*)\.css|(.*)\.js/)) {
+  if (myUrl.match(/(?:(?:https?):\/\/|www\.)(rodriavila89.github.io)(.*)\.css/)) {
 
     e.respondWith(
       fetch(e.request)
