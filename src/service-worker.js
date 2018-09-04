@@ -11,6 +11,16 @@ var cacheFiles = [
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Installed');
 
+  e.waitUntil(
+    caches
+    .open(cacheName)
+    .then(cache => {
+      console.log('Service Worker: Caching Files');
+      cache.addAll(cacheAssets);
+    })
+    .then(() => self.skipWaiting())
+  );
+
 });
 
 
