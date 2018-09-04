@@ -1,5 +1,5 @@
 // Set a name for the current cache
-var cacheName = 'v10';
+var cacheName = 'v11';
 
 // Default files to always cache
 var cacheFiles = [
@@ -16,7 +16,7 @@ self.addEventListener('install', function(e) {
     .open(cacheName)
     .then(cache => {
       console.log('Service Worker: Caching Files');
-      cache.addAll(cacheAssets);
+      //cache.addAll(cacheFiles);
     })
     .then(() => self.skipWaiting())
   );
