@@ -48,20 +48,36 @@ self.addEventListener('activate', function(e) {
 });
 
 
+function isMatch(url) {
+  let myPattern = [/.*?moment.*/, /.*?swiper.*/, /.*?carousel.*/];
+
+  let checkMatch = false;
+
+  myPattern.map(p => {
+    if (url.match(p)) {
+      checkMatch = true;
+    }
+  })
+
+  return checkMatch;
+
+}
+
+
 
 // Call Fetch Event
 self.addEventListener('fetch', e => {
   const myUrl = e.request.url;
   console.log('Service Worker: Fetching - ', myUrl);
 
-  if (myUrl.match(/(?:(?:https?):\/\/|www\.)(rodriavila89.github.io)(.*)\.css/)) {
+  if (isMatch(myUrl)) {
 
     e.respondWith(
       fetch(e.request)
       .then(res => {
         // Make copy/clone of response
         const resClone = res.clone();
-        // Open cahce
+        // Open cache
         caches.open(cacheName).then(cache => {
           // Add response to cache
           cache.put(e.request, resClone);
