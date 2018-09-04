@@ -38,63 +38,29 @@ self.addEventListener('activate', function(e) {
 });
 
 
-self.addEventListener('fetch', function(e) {
-  //console.log('[ServiceWorker] Fetch', e.request.url);
 
+// Call Fetch Event
+self.addEventListener('fetch', e => {
   const myUrl = e.request.url;
-
-  console.log('mi request: ', myUrl);
+  console.log('Service Worker: Fetching - ', myUrl);
 
   if (myUrl.match(/(?:(?:https?):\/\/|www\.)(rodriavila89.github.io)(.*)\.css|(.*)\.js/)) {
-    // e.respondWidth Responds to the fetch event
+
     e.respondWith(
+      fetch(e.request)
+      .then(res => {
+        // Make copy/clone of response
+        const resClone = res.clone();
+        // Open cahce
+        caches.open(cacheName).then(cache => {
+          // Add response to cache
+          cache.put(e.request, resClone);
+          console.log('[ServiceWorker] New Data Cached', e.request.url);
+        });
+        return res;
+      })
+      .catch(err => caches.match(e.request).then(res => res))
+    );
 
-      // Check in cache for the request being made
-      caches.match(e.request)
-
-
-      .then(function(response) {
-
-        // If the request is in the cache
-        if (response) {
-          console.log("[ServiceWorker] Found in Cache", e.request.url, response);
-          // Return the cached version
-          return response;
-        }
-
-        // If the request is NOT in the cache, fetch and cache
-
-        var requestClone = e.request.clone();
-        return fetch(requestClone)
-          .then(function(response) {
-
-            if (!response) {
-              console.log("[ServiceWorker] No response from fetch ")
-              return response;
-            }
-
-            var responseClone = response.clone();
-
-            //  Open the cache
-            caches.open(cacheName).then(function(cache) {
-
-              // Put the fetched response in the cache
-              cache.put(e.request, responseClone);
-              console.log('[ServiceWorker] New Data Cached', e.request.url);
-
-              // Return the response
-              return response;
-
-            }); // end caches.open
-
-          })
-          .catch(function(err) {
-            console.log('[ServiceWorker] Error Fetching & Caching New Data', err);
-          });
-
-
-      }) // end caches.match(e.request)
-    ); // end e.respondWith
   }
-
 });
